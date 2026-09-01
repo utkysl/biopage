@@ -1,0 +1,192 @@
+export const site = {
+  name: "Utku Yeşil",
+  nameMark: "UTKU YEŞİL",
+  role: "Technical Founder & Physics Engineer",
+  descriptor: "Physics Engineering · Technical Founder · Systems Builder",
+  institution: "Ankara University — Physics Engineering (2025–Present)",
+  introduction: "The intersection of physics, code, and curiosity.",
+  contactLine: "Building systems, ventures, and instruments. Let's connect.",
+  location: "Ankara, TR",
+  coordinateLine: "39.9334° N / 32.8597° E / ANKARA",
+  coordinates: {
+    lat: "39.9334° N",
+    lon: "32.8597° E",
+    city: "Ankara",
+  },
+  heroBody: [
+    "Work sits where physical systems, software architecture, and venture building meet. Founder and CTO of GoodJob, directing the technical and product systems behind a multi-sided service marketplace.",
+    "The practice is disciplined rather than loud: daily 1% improvement, systems thinking, personal finance analysis, and analog culture.",
+  ],
+  portrait: {
+    src: "/portrait.jpeg",
+    alt: "Portrait of Utku Yeşil.",
+    caption: "FIG. 01",
+    meta: "Portrait",
+  },
+  links: {
+    github: "https://github.com/utkysl",
+    linkedin: "https://www.linkedin.com/in/utku-ye%C5%9Fil-095a79325",
+    instagram: "https://www.instagram.com/utqy2606/",
+    email: "mailto:utkuyesil189@gmail.com",
+  },
+  nav: [
+    { label: "About", href: "#about" },
+    { label: "Ventures", href: "#ventures" },
+    { label: "Work", href: "#projects" },
+    { label: "Skills", href: "#skills" },
+    { label: "Contact", href: "#contact" },
+  ],
+  about: {
+    engineering: {
+      title: "Engineering & development",
+      body: "Bridging hardware and software from early electronics experimentation (Arduino, ESP8266) to full-stack systems. Founder and CTO at GoodJob — building and leading the technology behind a service marketplace.",
+    },
+    mindset: {
+      title: "Mindset & discipline",
+      body: "Daily continuous improvement (a 1% gain philosophy) as operating procedure, not slogan. Alongside the lab and the editor: personal finance analysis, analog audio and vinyl culture, electric guitar, and piano. The same attention to signal, noise, and iteration applies in each.",
+    },
+    dual: "Physics Engineering at Ankara University supplies the theoretical backbone; software architecture supplies the instrumentation. Founding work at GoodJob is the applied field: observe, model, build, measure — then ship.",
+  },
+  venture: {
+    index: "02",
+    name: "GoodJob",
+    period: "2025–Present",
+    role: "Founder & Chief Technology Officer",
+    summary:
+      "Directing end-to-end system architecture, product development, and venture execution for a multi-sided service marketplace platform.",
+    scope: [
+      "Full-Stack Architecture",
+      "Real-Time Systems",
+      "Technical Strategy",
+      "Cloud Deployment",
+    ],
+    stack: ["React", "Node.js", "Cloud DBs", "System Design"],
+    href: "https://good-job.com.tr",
+    hrefLabel: "Live Venture",
+  },
+  flagship: {
+    index: "01",
+    title: "GoodJob",
+    kicker: "Flagship venture",
+    description:
+      "A multi-sided service marketplace. Technical founding: architecture, full-stack product, and the systems that have to hold under real use.",
+    architecture: [
+      "Multi-sided marketplace topology",
+      "Full-stack product surface",
+      "Cloud deployment & data layer",
+      "Real-time matching and session flow",
+    ],
+    stack: "React · Node.js · Cloud DBs · System Design",
+    href: "https://good-job.com.tr",
+    hrefLabel: "Live Venture",
+    image: "/projects/deneme.jpeg",
+    figure: "FIG. 02",
+  },
+  studies: [
+    {
+      index: "02",
+      title: "Kanji Quiz App",
+      problem:
+        "Practice and test Japanese kanji in a focused, interactive application.",
+      architecture: "React client, quiz state, character sets",
+      stack: "React",
+      href: "https://github.com/utkysl/KanjiQuizApp",
+      hrefLabel: "GitHub",
+    },
+    {
+      index: "03",
+      title: "Smart House IoT",
+      problem:
+        "Monitor sensors and automate the home from embedded hardware at the edge.",
+      architecture: "ESP8266 firmware, sensor I/O, local control loop",
+      stack: "ESP8266 / C++ / Hardware",
+      href: "https://github.com/utkysl/akilli-ev-v1",
+      hrefLabel: "GitHub",
+    },
+    {
+      index: "04",
+      title: "Weather App",
+      problem:
+        "Surface real-time weather through a clear interface and live API integration.",
+      architecture: "Node.js service, weather API, response rendering",
+      stack: "Node.js",
+      href: "https://github.com/utkysl/Nodejs-Weather-App",
+      hrefLabel: "GitHub",
+    },
+  ],
+  education: {
+    line: "Ankara University — Physics Engineering (2025–Present)",
+    school: "Ankara University",
+    program: "Physics Engineering",
+    period: "2025–Present",
+  },
+  skills: [
+    {
+      channel: "01",
+      category: "Core Languages",
+      items: ["Python", "JavaScript", "TypeScript", "C#", "C++"],
+    },
+    {
+      channel: "02",
+      category: "Web & Distributed Systems",
+      items: [
+        "React",
+        "Next.js",
+        "Node.js",
+        "Tailwind CSS",
+        "MongoDB / Cloud DBs",
+      ],
+    },
+    {
+      channel: "03",
+      category: "Hardware & Instrumentation",
+      items: [
+        "Arduino",
+        "ESP8266",
+        "Analog Oscilloscopes",
+        "Circuit Prototyping",
+      ],
+    },
+    {
+      channel: "04",
+      category: "Engines & Tools",
+      items: ["Git", "GitHub", "Unity", "Unreal Engine 5"],
+    },
+  ],
+  languages: [
+    {
+      name: "Turkish",
+      iso: "TR",
+      flag: "tr",
+      level: "Native",
+      detail: "Native",
+      bars: 4,
+    },
+    {
+      name: "English",
+      iso: "GB",
+      flag: "gb",
+      level: "Upper-Intermediate",
+      detail: "B2",
+      bars: 3,
+    },
+    {
+      name: "Japanese",
+      iso: "JP",
+      flag: "jp",
+      level: "Intermediate Foundations",
+      detail: "~N5 / N4",
+      bars: 2,
+    },
+    {
+      name: "German",
+      iso: "DE",
+      flag: "de",
+      level: "Elementary",
+      detail: "A1 / A2",
+      bars: 1,
+    },
+  ],
+  interests:
+    "Analog audio and vinyl culture; personal finance analysis; musical instrumentation — electric guitar and piano. Hardware experimentation sits beside listening: patience, fidelity, systems.",
+} as const;
