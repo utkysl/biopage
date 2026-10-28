@@ -39,7 +39,7 @@ export const site = {
   about: {
     engineering: {
       title: "Engineering & development",
-      body: "Bridging hardware and software from early electronics experimentation (Arduino, ESP8266) to full-stack systems. Founder and CTO at GoodJob — building and leading the technology behind a service marketplace.",
+      body: "At the intersection of physics, computation, and engineering. Focused on modeling, simulating, and analyzing physical systems while building production-grade software architecture and embedded systems.",
     },
     mindset: {
       title: "Mindset & discipline",
@@ -47,23 +47,61 @@ export const site = {
     },
     dual: "Physics Engineering at Ankara University supplies the theoretical backbone; software architecture supplies the instrumentation. Founding work at GoodJob is the applied field: observe, model, build, measure — then ship.",
   },
-  venture: {
-    index: "02",
-    name: "GoodJob",
-    period: "2025–Present",
-    role: "Founder & Chief Technology Officer",
-    summary:
-      "Directing end-to-end system architecture, product development, and venture execution for a multi-sided service marketplace platform.",
-    scope: [
-      "Full-Stack Architecture",
-      "Real-Time Systems",
-      "Technical Strategy",
-      "Cloud Deployment",
-    ],
-    stack: ["React", "Node.js", "Cloud DBs", "System Design"],
-    href: "https://good-job.com.tr",
-    hrefLabel: "Live Venture",
-  },
+  ventures: [
+    {
+      name: "GoodJob",
+      period: "2025–Present",
+      role: "Founder & Chief Technology Officer",
+      location: null,
+      logo: "/logos/goodjob.png",
+      logoAlt: "GoodJob",
+      summary:
+        "Directing architecture and product development for a multi-sided service marketplace live on iOS and Android.",
+      scope: [
+        "Full-Stack Architecture",
+        "Real-Time Systems",
+        "Technical Strategy",
+        "Cloud Deployment",
+      ],
+      stack: ["React Native (Expo)", "Node.js", "MongoDB", "System Design"],
+      href: null,
+      hrefLabel: null,
+      stores: [
+        {
+          label: "Website",
+          href: "https://good-job.com.tr",
+        },
+        {
+          label: "App Store",
+          href: "https://apps.apple.com/us/app/goodjob-hizmet-platformu/id6791333564",
+        },
+        {
+          label: "Google Play",
+          href: "https://play.google.com/store/apps/details?id=com.utku.goodjob",
+        },
+      ],
+    },
+    {
+      name: "AU YAZGİT",
+      period: "2025–Present",
+      role: "Project Committee Board Member & Model Satellite Team Lead",
+      location: "Ankara, TR",
+      logo: "/logos/yazgit.png",
+      logoAlt: "AU YAZGİT",
+      summary:
+        "Evaluating technical project proposals on the executive board and leading systems engineering, RF telemetry, and avionics for the TEKNOFEST Model Satellite team.",
+      scope: [
+        "Systems Engineering",
+        "Embedded C/C++",
+        "RF Telemetry",
+        "Scientific Computing",
+      ],
+      stack: ["C / C++", "Embedded Systems", "RF Telemetry", "System Architecture"],
+      href: "https://github.com/AU-YAZGIT",
+      hrefLabel: "GitHub Org",
+      stores: null,
+    },
+  ],
   flagship: {
     index: "01",
     title: "GoodJob",
@@ -76,41 +114,53 @@ export const site = {
       "Cloud deployment & data layer",
       "Real-time matching and session flow",
     ],
-    stack: "React · Node.js · Cloud DBs · System Design",
-    href: "https://good-job.com.tr",
-    hrefLabel: "Live Venture",
+    stack: "React Native · Expo · Node.js · MongoDB",
+    stores: [
+      {
+        label: "Website",
+        href: "https://good-job.com.tr",
+      },
+      {
+        label: "App Store",
+        href: "https://apps.apple.com/us/app/goodjob-hizmet-platformu/id6791333564",
+      },
+      {
+        label: "Google Play",
+        href: "https://play.google.com/store/apps/details?id=com.utku.goodjob",
+      },
+    ],
     image: "/projects/deneme.jpeg",
     figure: "FIG. 02",
   },
   studies: [
     {
-      index: "02",
-      title: "Kanji Quiz App",
+      index: "01",
+      title: "Computational Physics Laboratory",
       problem:
-        "Practice and test Japanese kanji in a focused, interactive application.",
-      architecture: "React client, quiz state, character sets",
-      stack: "React",
-      href: "https://github.com/utkysl/KanjiQuizApp",
-      hrefLabel: "GitHub",
+        "Numerical methods, differential equations, and physical-system modeling experiments.",
+      architecture: "Python · C / C++ · Numerical Analysis",
+      stack: "Python · C / C++ · Numerical Analysis",
+      href: null,
+      hrefLabel: null,
+    },
+    {
+      index: "02",
+      title: "Applied Computer Vision Lab",
+      problem:
+        "Image processing mathematics, classical filtering, and feature extraction pipelines.",
+      architecture: "Python · OpenCV · Signal Processing",
+      stack: "Python · OpenCV · Signal Processing",
+      href: null,
+      hrefLabel: null,
     },
     {
       index: "03",
-      title: "Smart House IoT",
+      title: "Model Satellite System Architecture",
       problem:
-        "Monitor sensors and automate the home from embedded hardware at the edge.",
-      architecture: "ESP8266 firmware, sensor I/O, local control loop",
-      stack: "ESP8266 / C++ / Hardware",
-      href: "https://github.com/utkysl/akilli-ev-v1",
-      hrefLabel: "GitHub",
-    },
-    {
-      index: "04",
-      title: "Weather App",
-      problem:
-        "Surface real-time weather through a clear interface and live API integration.",
-      architecture: "Node.js service, weather API, response rendering",
-      stack: "Node.js",
-      href: "https://github.com/utkysl/Nodejs-Weather-App",
+        "1 Hz real-time telemetry pipeline, sensor fusion, and recovery mechanism design.",
+      architecture: "Embedded C/C++ · RF Telemetry · Sensors",
+      stack: "Embedded C/C++ · RF Telemetry · Sensors",
+      href: "https://github.com/AU-YAZGIT",
       hrefLabel: "GitHub",
     },
   ],
@@ -123,34 +173,44 @@ export const site = {
   skills: [
     {
       channel: "01",
-      category: "Core Languages",
-      items: ["Python", "JavaScript", "TypeScript", "C#", "C++"],
+      category: "Scientific Computing & Languages",
+      items: [
+        "Python",
+        "C / C++",
+        "Numerical Analysis",
+        "JavaScript / TypeScript",
+        "C#",
+      ],
     },
     {
       channel: "02",
-      category: "Web & Distributed Systems",
+      category: "Systems & Software",
       items: [
-        "React",
-        "Next.js",
-        "Node.js",
-        "Tailwind CSS",
-        "MongoDB / Cloud DBs",
+        "React Native & Expo",
+        "Node.js & Express",
+        "MongoDB",
+        "Git / GitHub",
       ],
     },
     {
       channel: "03",
       category: "Hardware & Instrumentation",
       items: [
-        "Arduino",
-        "ESP8266",
-        "Analog Oscilloscopes",
-        "Circuit Prototyping",
+        "Embedded Systems (ESP / MCU)",
+        "RF & Analog Circuits",
+        "Digital Oscilloscopes",
+        "Sensors (I2C/SPI/UART)",
       ],
     },
     {
       channel: "04",
-      category: "Engines & Tools",
-      items: ["Git", "GitHub", "Unity", "Unreal Engine 5"],
+      category: "Research Interests",
+      items: [
+        "Computational Physics",
+        "Particle Physics",
+        "Detector Physics",
+        "Scientific Data Analysis",
+      ],
     },
   ],
   languages: [

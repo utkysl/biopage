@@ -3,6 +3,7 @@ import { Arrow } from "./Arrow";
 import { Container } from "./Container";
 import { IndexMark, MonoTag } from "./Meta";
 import { Reveal } from "./Reveal";
+import { StoreLinks } from "./StoreLinks";
 
 export function Projects() {
   const flagship = site.flagship;
@@ -24,7 +25,7 @@ export function Projects() {
               Selected work
             </h2>
           </div>
-          <MonoTag>01–04</MonoTag>
+          <MonoTag>01–03</MonoTag>
         </div>
 
         <Reveal className="mt-14">
@@ -68,19 +69,11 @@ export function Projects() {
                     ))}
                   </ol>
                 </div>
-                <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+                <div className="flex flex-col gap-5">
                   <p className="font-mono text-xs tracking-wider text-zinc-400 uppercase">
                     {flagship.stack}
                   </p>
-                  <a
-                    href={flagship.href}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    className="group nav-link shift inline-flex items-center gap-2 py-0.5 text-[13px] text-paper"
-                  >
-                    {flagship.hrefLabel}
-                    <Arrow />
-                  </a>
+                  <StoreLinks stores={flagship.stores} />
                 </div>
               </div>
             </div>
@@ -121,15 +114,19 @@ export function Projects() {
                         {study.stack}
                       </p>
                     </div>
-                    <a
-                      href={study.href}
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="group nav-link inline-flex items-center gap-1 self-start py-0.5 text-[12px] text-zinc-300"
-                    >
-                      {study.hrefLabel}
-                      <Arrow />
-                    </a>
+                    {study.href ? (
+                      <a
+                        href={study.href}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="group nav-link inline-flex items-center gap-1 self-start py-0.5 text-[12px] text-zinc-300"
+                      >
+                        {study.hrefLabel}
+                        <Arrow />
+                      </a>
+                    ) : (
+                      <span />
+                    )}
                   </div>
                 </article>
               </li>
